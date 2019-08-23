@@ -1,0 +1,27 @@
+{
+  "name": "ranking",
+  "version": "0.0.1",
+  "description": "Ranking for DApps",
+  "scripts": {
+    "start": "npx embark run",
+    "ci": "npm run qa",
+    "clean": "npm run reset",
+    "package": "npm pack",
+    "qa": "npm-run-all test package",
+    "reset": "npx embark-reset && npx rimraf embark-*.tgz package",
+    "test": "npx embark test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/status-im/ranking.git"
+  },
+  "author": "Status Research & Development GMBH",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/status-im/ranking/issues"
+  },
+  "homepage": "https://github.com/status-im/ranking#readme",
+  "dependencies": {
+    "embark": "^4.1.0"
+  }
+}
